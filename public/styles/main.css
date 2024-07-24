@@ -1,0 +1,110 @@
+.lobster-two-regular {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lobster-two-bold {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lobster-two-regular-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lobster-two-bold-italic {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .text{
+    color: white;
+    font-family: "Lobster Two";
+  }
+
+  body{
+    background-color: #4B55AC;
+  }
+
+  .input{
+   width: 75%;
+   background-color: #fff;
+   color: #000;
+   border-radius: 7px;
+   cursor: pointer;
+   font-size: 18px;
+   padding: 15px 15px;
+   margin: 15px;
+   border: 0 !important;
+   outline: 0 !important;
+  }
+
+  .submit{
+    border: 0 ;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+
+  .animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: white;
+    font-family: "Lobster Two";
+  }
+
+  .animated-text span{
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+
+  .animated-text span::before{
+    content: "Song";
+    animation: words 20s infinite;
+  }
+
+  .animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background-color: #4B55AC;
+    border-left: 2px solid white;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+  }
+
+  @keyframes cursor{
+    to{
+      border-left: 2px solid #ff7f5000;
+    }
+  }
+
+  @keyframes words{
+    0%,30%{
+      content: "Song"
+    }
+    31%,60%{
+      content: "Artist"
+    }
+    61%,100%{
+      content: "Album"
+    }
+  }
+
+  @keyframes typing {
+    15%, 20%,45%, 50%,80%,85%{
+      width: 0;
+    }
+    5%, 30%, 35%, 60%, 65%{
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+    }
+  }
