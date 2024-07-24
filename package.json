@@ -7,6 +7,8 @@
     "start": "nodemon index.js",
     "build": "webpack",
     "prod": "node dist/final.js"
+  },"engines": {
+    "node": "20.15.0"   
   },
   "keywords": [],
   "type": "module",
